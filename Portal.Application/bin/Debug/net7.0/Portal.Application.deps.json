@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Portal.Application/1.0.0": {
+        "dependencies": {
+          "Portal.Domain": "1.0.0",
+          "Portal.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "Portal.Application.dll": {}
+        }
+      },
+      "Portal.Domain/1.0.0": {
+        "runtime": {
+          "Portal.Domain.dll": {}
+        }
+      },
+      "Portal.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Portal.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Portal.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Portal.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Portal.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Portal.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

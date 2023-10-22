@@ -1,0 +1,15 @@
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/bin/Debug/net7.0/Portal.Infrastructure.deps.json
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/bin/Debug/net7.0/Portal.Infrastructure.dll
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/bin/Debug/net7.0/Portal.Infrastructure.pdb
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/bin/Debug/net7.0/Portal.Domain.dll
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/bin/Debug/net7.0/Portal.Domain.pdb
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/Portal.Infrastructure.csproj.AssemblyReference.cache
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/Portal.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/Portal.Infrastructure.AssemblyInfoInputs.cache
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/Portal.Infrastructure.AssemblyInfo.cs
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/Portal.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/Portal.Infrastructure.csproj.CopyComplete
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/Portal.Infrastructure.dll
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/refint/Portal.Infrastructure.dll
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/Portal.Infrastructure.pdb
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/ref/Portal.Infrastructure.dll

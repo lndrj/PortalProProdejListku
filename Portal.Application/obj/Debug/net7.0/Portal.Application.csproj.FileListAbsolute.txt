@@ -1,0 +1,17 @@
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/bin/Debug/net7.0/Portal.Application.deps.json
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/bin/Debug/net7.0/Portal.Application.dll
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/bin/Debug/net7.0/Portal.Application.pdb
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/bin/Debug/net7.0/Portal.Domain.dll
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/bin/Debug/net7.0/Portal.Infrastructure.dll
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/bin/Debug/net7.0/Portal.Domain.pdb
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/bin/Debug/net7.0/Portal.Infrastructure.pdb
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/obj/Debug/net7.0/Portal.Application.csproj.AssemblyReference.cache
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/obj/Debug/net7.0/Portal.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/obj/Debug/net7.0/Portal.Application.AssemblyInfoInputs.cache
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/obj/Debug/net7.0/Portal.Application.AssemblyInfo.cs
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/obj/Debug/net7.0/Portal.Application.csproj.CoreCompileInputs.cache
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/obj/Debug/net7.0/Portal.Application.csproj.CopyComplete
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/obj/Debug/net7.0/Portal.Application.dll
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/obj/Debug/net7.0/refint/Portal.Application.dll
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/obj/Debug/net7.0/Portal.Application.pdb
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Application/obj/Debug/net7.0/ref/Portal.Application.dll

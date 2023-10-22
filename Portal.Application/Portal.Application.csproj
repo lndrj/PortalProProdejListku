@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>UTB.Eshop.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Portal.Domain\Portal.Domain.csproj" />
+    <ProjectReference Include="..\Portal.Infrastructure\Portal.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
