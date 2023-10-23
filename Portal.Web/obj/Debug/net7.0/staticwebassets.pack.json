@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/js/dialogs.js",
+      "PackagePath": "staticwebassets/js/dialogs.js"
+    },
+    {
       "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

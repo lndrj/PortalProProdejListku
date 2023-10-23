@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

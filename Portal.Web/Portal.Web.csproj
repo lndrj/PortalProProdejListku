@@ -7,6 +7,8 @@
     <RootNamespace>Portal.Web</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <ProjectReference Include="..\Portal.Application\Portal.Application.csproj" />
     <ProjectReference Include="..\Portal.Domain\Portal.Domain.csproj" />

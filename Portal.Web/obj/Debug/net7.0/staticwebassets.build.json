@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8kA8++lv3xfanZMb220RZ8ILX1SBYh9HSXgbV+3R3dE=",
+  "Hash": "CsaSYLJrr1TdgDaUtqQ48eyCtzsQrQPQwNQd5bebxuA=",
   "Source": "Portal.Web",
   "BasePath": "_content/Portal.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/js/dialogs.js",
+      "SourceId": "Portal.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/",
+      "BasePath": "_content/Portal.Web",
+      "RelativePath": "js/dialogs.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/dialogs.js"
     },
     {
       "Identity": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/js/site.js",

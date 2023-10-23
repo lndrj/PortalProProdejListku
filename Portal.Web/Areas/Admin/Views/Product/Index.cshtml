@@ -16,6 +16,7 @@
                     <th scope="col">@nameof(Product.Description)</th>
                     <th scope="col">@nameof(Product.Price)</th>
                     <th scope="col">@nameof(Product.ImageSrc)</th>
+                    <th scope="col">Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -27,10 +28,16 @@
                         <td>@Model[i].Description</td>
                         <td>@Model[i].Price</td>
                         <td>@Model[i].ImageSrc</td>
+                        <td><a asp-action="Delete" asp-route-Id="@Model[i].Id" onclick="return ConfirmDelete();">Delete</a></td>
                     </tr>
                 }
             </tbody>
         </table>
 
     }
+}
+
+@section Scripts
+{
+<script src="~/js/dialogs.js"></script>
 }
