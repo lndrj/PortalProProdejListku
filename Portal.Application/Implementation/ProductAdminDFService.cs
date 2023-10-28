@@ -42,5 +42,18 @@ namespace Portal.Application.Implementation
 
             return deleted;
         }
+
+        public void Update(Product product)
+        {
+            Product? aktualizovanyProdukt = DatabaseFake.Products.FirstOrDefault(p => p.Id == product.Id);
+            if (aktualizovanyProdukt != null)
+            {
+                aktualizovanyProdukt.Name = product.Name;
+                aktualizovanyProdukt.Description = product.Description;
+                aktualizovanyProdukt.Price = product.Price;
+                aktualizovanyProdukt.ImageSrc = product.ImageSrc;       
+            }
+
+        }
     }
 }

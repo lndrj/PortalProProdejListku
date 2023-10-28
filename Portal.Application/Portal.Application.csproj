@@ -12,4 +12,10 @@
     <ProjectReference Include="..\Portal.Infrastructure\Portal.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
 </Project>

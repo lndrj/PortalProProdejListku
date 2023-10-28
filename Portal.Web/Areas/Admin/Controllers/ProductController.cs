@@ -46,5 +46,30 @@ namespace Portal.Web.Areas.Admin.Controllers
             else
                 return NotFound();
         }
+
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            Product? product = _productAdminService.Select().FirstOrDefault(p => p.Id == id);
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return View(product);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Product product)
+        {
+            if (ModelState.IsValid)
+            {
+                _productAdminService.Update(product);
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(product);
+        }
     }
 }

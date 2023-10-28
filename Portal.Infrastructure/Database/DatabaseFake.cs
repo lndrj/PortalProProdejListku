@@ -10,31 +10,15 @@ namespace Portal.Infrastructure.Database
     public class DatabaseFake
     {
         public static List<Product> Products { get; set; }
+        public static List<Carousel> Carousels { get; set; }
+
 
         static DatabaseFake()
         {
-            Products = new List<Product>();
-            Products.Add(new Product {
-                Id = 1,
-                Name = "iPhone",
-                Description = "smartphone",
-                Price = 15000,
-                ImageSrc = ""
-            });
-            Products.Add(new Product {
-                Id = 2,
-                Name = "iPhone",
-                Description = "smartphone",
-                Price = 15000,
-                ImageSrc = ""
-            });
-            Products.Add(new Product {
-                Id = 3,
-                Name = "iPhone",
-                Description = "smartphone",
-                Price = 15000,
-                ImageSrc = ""
-            });
+            DatabaseInit databaseInit = new DatabaseInit();
+            Products = databaseInit.GetProducts().ToList();
+            Carousels = databaseInit.GetCarousels().ToList();
+            
         }
     }
 }

@@ -1,21 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Portal.Web.Models;
+using Portal.Application.Abstraction;
+using Portal.Application.ViewModels;
 
 namespace Portal.Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        IHomeService _homeService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IHomeService homeService)
         {
             _logger = logger;
+            _homeService = homeService;
         }
 
         public IActionResult Index()
         {
-            return View();
+            CarouselProductViewModel viewModel = _homeService.GetHomeIndexViewModel();
+            return View(viewModel);
         }
 
         public IActionResult Privacy()

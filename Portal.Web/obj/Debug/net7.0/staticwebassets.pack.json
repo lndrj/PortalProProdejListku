@@ -5,12 +5,76 @@
       "PackagePath": "staticwebassets/Portal.Web.bundle.scp.css"
     },
     {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/css/shop_home.css",
+      "PackagePath": "staticwebassets/css/shop_home.css"
+    },
+    {
       "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
       "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/.DS_Store",
+      "PackagePath": "staticwebassets/img/.DS_Store"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/carousel/Information-Technology-1-1.jpg",
+      "PackagePath": "staticwebassets/img/carousel/Information-Technology-1-1.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/carousel/how-to-become-an-information-technology-specialist160684886950141.jpg",
+      "PackagePath": "staticwebassets/img/carousel/how-to-become-an-information-technology-specialist160684886950141.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/carousel/itec-index-banner.jpg",
+      "PackagePath": "staticwebassets/img/carousel/itec-index-banner.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/product/produkty-01.jpg",
+      "PackagePath": "staticwebassets/img/product/produkty-01.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/product/produkty-02.jpg",
+      "PackagePath": "staticwebassets/img/product/produkty-02.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/product/produkty-03.jpg",
+      "PackagePath": "staticwebassets/img/product/produkty-03.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/product/produkty-05.jpg",
+      "PackagePath": "staticwebassets/img/product/produkty-05.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/product/produkty-06.jpg",
+      "PackagePath": "staticwebassets/img/product/produkty-06.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/product/produkty-07.jpg",
+      "PackagePath": "staticwebassets/img/product/produkty-07.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/product/produkty-08.jpg",
+      "PackagePath": "staticwebassets/img/product/produkty-08.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/product/produkty-09.jpg",
+      "PackagePath": "staticwebassets/img/product/produkty-09.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/product/produkty-10.jpg",
+      "PackagePath": "staticwebassets/img/product/produkty-10.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/product/produkty-11.jpg",
+      "PackagePath": "staticwebassets/img/product/produkty-11.jpg"
+    },
+    {
+      "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/img/product/produkty-12.jpg",
+      "PackagePath": "staticwebassets/img/product/produkty-12.jpg"
     },
     {
       "Id": "/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/wwwroot/js/dialogs.js",

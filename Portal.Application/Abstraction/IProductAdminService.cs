@@ -12,5 +12,6 @@ namespace Portal.Application.Abstraction
         IList<Product> Select();
         void Create(Product product);
         bool Delete(int id);
+        public void Update(Product product);
     }
 }
