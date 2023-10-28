@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Portal.Web", "Portal.Web", "{42CEB503-6482-4DFD-B061-B149A6410632}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Portal.Web", "Portal.Web\Portal.Web.csproj", "{42CEB503-6482-4DFD-B061-B149A6410632}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.Application", "Portal.Application\Portal.Application.csproj", "{BE19743B-259D-4991-AFEB-7275E6D45BCC}"
 EndProject
