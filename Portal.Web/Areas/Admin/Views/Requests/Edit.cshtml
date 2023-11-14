@@ -1,0 +1,10 @@
+﻿@model AdminRequest
+
+<h2>Edit Request</h2>
+
+<p>Change solved status for request ID @Model.Id ?</p>
+
+
+<form asp-action="Solved" method="post">
+    <button type="submit">Confirm</button>
+</form>

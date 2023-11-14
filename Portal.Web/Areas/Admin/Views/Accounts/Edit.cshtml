@@ -1,0 +1,10 @@
+﻿@model Account
+
+<h2>Edit Account</h2>
+
+<p>Change IsAdmin status for user @Model.FirstName @Model.LastName ?</p>
+
+
+<form asp-action="ToggleAdmin" method="post">
+    <button type="submit">Confirm</button>
+</form>

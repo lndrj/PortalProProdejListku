@@ -7,11 +7,11 @@ using Portal.Domain.Entities;
 
 namespace Portal.Application.Abstraction
 {
-    public interface IProductAdminService
+    public interface IAkceAdminService
     {
-        IList<Product> Select();
-        void Create(Product product);
+        IList<Akce> Select();
+        void Create(Akce akce);
         bool Delete(int id);
-        public void Update(Product product);
+        public void Update(Akce akce);
     }
 }

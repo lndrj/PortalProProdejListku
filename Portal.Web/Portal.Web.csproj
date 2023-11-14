@@ -27,5 +27,25 @@
     <Folder Include="wwwroot\img\" />
     <Folder Include="wwwroot\img\carousel\" />
     <Folder Include="wwwroot\img\product\" />
+    <Folder Include="Areas\Admin\Views\AdminHome\" />
+    <Folder Include="Areas\Admin\Views\Accounts\" />
+    <Folder Include="Areas\Admin\Views\Discussion\" />
+    <Folder Include="Areas\Admin\Views\Requests\" />
+    <Folder Include="Areas\LoginSignup\" />
+    <Folder Include="Areas\LoginSignup\Controllers\" />
+    <Folder Include="Areas\LoginSignup\Views\" />
+    <Folder Include="Areas\LoginSignup\Views\Login\" />
+    <Folder Include="Areas\LoginSignup\Views\Signup\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Areas\Admin\Views\AdminHome\" />
+    <None Remove="Areas\Admin\Views\Accounts\" />
+    <None Remove="Areas\Admin\Views\Discussion\" />
+    <None Remove="Areas\Admin\Views\Requests\" />
+    <None Remove="Areas\LoginSignup\" />
+    <None Remove="Areas\LoginSignup\Controllers\" />
+    <None Remove="Areas\LoginSignup\Views\" />
+    <None Remove="Areas\LoginSignup\Views\Login\" />
+    <None Remove="Areas\LoginSignup\Views\Signup\" />
   </ItemGroup>
 </Project>

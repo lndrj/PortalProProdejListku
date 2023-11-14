@@ -1,7 +1,7 @@
-﻿@model IList<Product>
+﻿@model IList<Akce>
 
 @{
-    ViewData["Title"] = "Product Administration";
+    ViewData["Title"] = "Databáze Akcí";
 }
 <h1>@ViewData["Title"]</h1>
 
@@ -11,11 +11,11 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">@nameof(Product.Id)</th>
-                    <th scope="col">@nameof(Product.Name)</th>
-                    <th scope="col">@nameof(Product.Description)</th>
-                    <th scope="col">@nameof(Product.Price)</th>
-                    <th scope="col">@nameof(Product.ImageSrc)</th>
+                    <th scope="col">@nameof(Akce.Id)</th>
+                    <th scope="col">@nameof(Akce.Name)</th>
+                    <th scope="col">@nameof(Akce.Description)</th>
+                    <th scope="col">@nameof(Akce.Price)</th>
+                    <th scope="col">@nameof(Akce.ImageSrc)</th>
                     <th scope="col">Delete</th>
                     <th scope="col">Edit</th>
                 </tr>
@@ -41,5 +41,5 @@
 
 @section Scripts
 {
-<script src="~/js/dialogs.js"></script>
+    <script src="~/js/dialogs.js"></script>
 }

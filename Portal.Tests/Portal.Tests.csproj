@@ -7,7 +7,7 @@
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    <RootNamespace>UTB.Eshop.Tests</RootNamespace>
+    <RootNamespace>Portal.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

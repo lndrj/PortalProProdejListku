@@ -6,7 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<IProductAdminService, ProductAdminDFService>();
+builder.Services.AddScoped<IAkceAdminService, AkceAdminDFService>();
+builder.Services.AddScoped<IAccountsAdminService, AccountsAdminDFService>();
+builder.Services.AddScoped<IDiscussionAdminService, DiscussionAdminDFService>();
+builder.Services.AddScoped<IRequestsAdminService, RequestsAdminDFService>();
 builder.Services.AddScoped<IHomeService, HomeService>();
 
 

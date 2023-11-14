@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>UTB.Eshop.Application</RootNamespace>
+    <RootNamespace>Portal.Application</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

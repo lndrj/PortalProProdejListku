@@ -10,7 +10,7 @@ namespace Portal.Application.Implementation
 		public CarouselProductViewModel GetHomeIndexViewModel()
 		{
 			CarouselProductViewModel viewModel = new CarouselProductViewModel();
-			viewModel.Products = DatabaseFake.Products;
+			viewModel.Akces = DatabaseFake.Akces;
 			viewModel.Carousels = DatabaseFake.Carousels;
 			return viewModel;
 		}

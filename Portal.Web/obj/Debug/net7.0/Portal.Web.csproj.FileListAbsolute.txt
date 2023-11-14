@@ -227,3 +227,4 @@
 /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/obj/Debug/net7.0/Portal.Web.pdb
 /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/obj/Debug/net7.0/Portal.Web.genruntimeconfig.cache
 /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/obj/Debug/net7.0/ref/Portal.Web.dll
+/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/obj/Debug/net7.0/scopedcss/Views/Shared/_LayoutAdmin.cshtml.rz.scp.css

@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Portal.Domain.Entities
 {
-    public class Product : Entity<int>
+    public class Akce : Entity<int>
     {
         public string Name { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }
+        public DateTime Date { get; set; }
         public string ImageSrc { get; set; }
     }
 }
