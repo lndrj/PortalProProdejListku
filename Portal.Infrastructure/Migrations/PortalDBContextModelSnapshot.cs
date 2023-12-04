@@ -19,6 +19,116 @@ namespace Portal.Infrastructure.Migrations
                 .HasAnnotation("ProductVersion", "7.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("Portal.Domain.Entities.Account", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("IsAdmin")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Accounts");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DateCreated = new DateTime(2023, 11, 21, 15, 19, 0, 386, DateTimeKind.Local).AddTicks(4784),
+                            Email = "john.doe@example.com",
+                            FirstName = "John",
+                            IsAdmin = true,
+                            LastName = "Doe",
+                            Password = "password123",
+                            PhoneNumber = "123456789"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DateCreated = new DateTime(2023, 11, 21, 15, 19, 0, 386, DateTimeKind.Local).AddTicks(4840),
+                            Email = "alice.smith@example.com",
+                            FirstName = "Alice",
+                            IsAdmin = false,
+                            LastName = "Smith",
+                            Password = "securepassword",
+                            PhoneNumber = "987654321"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DateCreated = new DateTime(2023, 11, 21, 15, 19, 0, 386, DateTimeKind.Local).AddTicks(4843),
+                            Email = "bob.johnson@example.com",
+                            FirstName = "Bob",
+                            IsAdmin = true,
+                            LastName = "Johnson",
+                            Password = "bobpassword",
+                            PhoneNumber = "555555555"
+                        });
+                });
+
+            modelBuilder.Entity("Portal.Domain.Entities.AdminRequest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Request")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("Solved")
+                        .HasColumnType("tinyint(1)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Requests");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Request = "První žádost na admina.",
+                            Solved = false
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Request = "Druhá žádost na admina.",
+                            Solved = true
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Request = "Třetí žádost na admina.",
+                            Solved = false
+                        });
+                });
+
             modelBuilder.Entity("Portal.Domain.Entities.Akce", b =>
                 {
                     b.Property<int>("Id")
@@ -45,7 +155,7 @@ namespace Portal.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Akces", (string)null);
+                    b.ToTable("Akces");
 
                     b.HasData(
                         new
@@ -92,7 +202,7 @@ namespace Portal.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Carousels", (string)null);
+                    b.ToTable("Carousels");
 
                     b.HasData(
                         new
@@ -113,6 +223,125 @@ namespace Portal.Infrastructure.Migrations
                             ImageAlt = "Third slide",
                             ImageSrc = "/img/carousel/itec-index-banner.jpg"
                         });
+                });
+
+            modelBuilder.Entity("Portal.Domain.Entities.Diskuze", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("AkceID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Komentar")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Discussions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AkceID = 1,
+                            Komentar = "První komentář k akci 1.",
+                            UserID = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AkceID = 1,
+                            Komentar = "Druhý komentář k akci 1.",
+                            UserID = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AkceID = 2,
+                            Komentar = "Komentář k akci 2.",
+                            UserID = 3
+                        });
+                });
+
+            modelBuilder.Entity("Portal.Domain.Entities.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateTimeCreated")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("OrderNumber")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<double>("TotalPrice")
+                        .HasColumnType("double");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("Portal.Domain.Entities.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("AkceID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderID")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("double");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AkceID");
+
+                    b.HasIndex("OrderID");
+
+                    b.ToTable("OrderItems");
+                });
+
+            modelBuilder.Entity("Portal.Domain.Entities.OrderItem", b =>
+                {
+                    b.HasOne("Portal.Domain.Entities.Akce", "Akce")
+                        .WithMany()
+                        .HasForeignKey("AkceID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Portal.Domain.Entities.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Akce");
+
+                    b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("Portal.Domain.Entities.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 #pragma warning restore 612, 618
         }

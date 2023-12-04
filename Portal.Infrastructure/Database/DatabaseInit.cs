@@ -98,11 +98,7 @@ namespace Portal.Infrastructure.Database
             });
             carousels.Add(new Carousel
             {
-<<<<<<< Updated upstream
-                Id = 2,
-=======
                 Id = 3,
->>>>>>> Stashed changes
                 ImageSrc = "/img/carousel/itec-index-banner.jpg",
                 ImageAlt = "Third slide"
             });

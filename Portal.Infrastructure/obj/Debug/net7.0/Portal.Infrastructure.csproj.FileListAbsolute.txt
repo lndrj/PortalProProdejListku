@@ -13,3 +13,37 @@
 /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/refint/Portal.Infrastructure.dll
 /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/Portal.Infrastructure.pdb
 /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Infrastructure/obj/Debug/net7.0/ref/Portal.Infrastructure.dll
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\bin\Debug\net7.0\Portal.Infrastructure.deps.json
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\bin\Debug\net7.0\Portal.Infrastructure.runtimeconfig.json
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\bin\Debug\net7.0\Portal.Infrastructure.dll
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\bin\Debug\net7.0\Portal.Infrastructure.pdb
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\bin\Debug\net7.0\Portal.Domain.dll
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\bin\Debug\net7.0\Portal.Domain.pdb
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.AssemblyInfo.cs
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.csproj.CopyComplete
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.dll
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\obj\Debug\net7.0\refint\Portal.Infrastructure.dll
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.pdb
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.genruntimeconfig.cache
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Infrastructure\obj\Debug\net7.0\ref\Portal.Infrastructure.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\bin\Debug\net7.0\Portal.Infrastructure.deps.json
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\bin\Debug\net7.0\Portal.Infrastructure.runtimeconfig.json
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\bin\Debug\net7.0\Portal.Infrastructure.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\bin\Debug\net7.0\Portal.Infrastructure.pdb
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\bin\Debug\net7.0\Portal.Domain.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\bin\Debug\net7.0\Portal.Domain.pdb
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.AssemblyInfo.cs
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.csproj.CopyComplete
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\refint\Portal.Infrastructure.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.pdb
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.genruntimeconfig.cache
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\ref\Portal.Infrastructure.dll

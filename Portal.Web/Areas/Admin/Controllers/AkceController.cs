@@ -50,6 +50,8 @@ namespace Portal.Web.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
+            Console.WriteLine($"Přijato ID pro aktualizaci: {id}");
+
             Akce? akce = _akceAdminService.Select().FirstOrDefault(ak => ak.Id == id);
 
             if (akce == null)

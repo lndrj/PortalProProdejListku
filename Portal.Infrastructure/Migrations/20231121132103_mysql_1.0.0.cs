@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Portal.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class mysql_100_init : Migration
+    public partial class mysql_100 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -55,6 +55,53 @@ namespace Portal.Infrastructure.Migrations
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
+            migrationBuilder.CreateTable(
+                name: "Orders",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    DateTimeCreated = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    OrderNumber = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    TotalPrice = table.Column<double>(type: "double", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orders", x => x.Id);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "OrderItems",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    OrderID = table.Column<int>(type: "int", nullable: false),
+                    AkceID = table.Column<int>(type: "int", nullable: false),
+                    Amount = table.Column<int>(type: "int", nullable: false),
+                    Price = table.Column<double>(type: "double", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderItems", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_OrderItems_Akces_AkceID",
+                        column: x => x.AkceID,
+                        principalTable: "Akces",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_OrderItems_Orders_OrderID",
+                        column: x => x.OrderID,
+                        principalTable: "Orders",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
             migrationBuilder.InsertData(
                 table: "Akces",
                 columns: new[] { "Id", "Date", "Description", "ImageSrc", "Name", "Price" },
@@ -74,16 +121,32 @@ namespace Portal.Infrastructure.Migrations
                     { 2, "Second slide", "/img/carousel/Information-Technology-1-1.jpg" },
                     { 3, "Third slide", "/img/carousel/itec-index-banner.jpg" }
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderItems_AkceID",
+                table: "OrderItems",
+                column: "AkceID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderItems_OrderID",
+                table: "OrderItems",
+                column: "OrderID");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Carousels");
+
+            migrationBuilder.DropTable(
+                name: "OrderItems");
+
+            migrationBuilder.DropTable(
                 name: "Akces");
 
             migrationBuilder.DropTable(
-                name: "Carousels");
+                name: "Orders");
         }
     }
 }

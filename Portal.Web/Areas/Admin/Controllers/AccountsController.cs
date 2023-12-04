@@ -5,9 +5,9 @@ using Portal.Domain.Entities;
 
 namespace Portal.Web.Areas.Admin.Controllers
 {
-	[Area("Admin")]
-	public class AccountsController : Controller
-	{
+    [Area("Admin")]
+    public class AccountsController : Controller
+    {
         IAccountsAdminService _accountsAdminService;
         public AccountsController(IAccountsAdminService accountsAdminService)
         {
@@ -50,7 +50,8 @@ namespace Portal.Web.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(ToggleAdmin));
+                _accountsAdminService.Update(account);
+                return RedirectToAction(nameof(Accounts));
             }
 
             return View(account);
@@ -74,11 +75,9 @@ namespace Portal.Web.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult ToggleAdmin(Account account)
         {
-            // Uloží se změna IsAdmin
+            // Uložení změny IsAdmin
             _accountsAdminService.Update(account);
             return RedirectToAction(nameof(Accounts));
         }
-
     }
 }
-

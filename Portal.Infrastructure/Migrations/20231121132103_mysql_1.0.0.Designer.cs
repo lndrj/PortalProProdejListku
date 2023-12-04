@@ -11,8 +11,8 @@ using Portal.Infrastructure.Database;
 namespace Portal.Infrastructure.Migrations
 {
     [DbContext(typeof(PortalDBContext))]
-    [Migration("20231114081243_mysql_1.0.0_init")]
-    partial class mysql_100_init
+    [Migration("20231121132103_mysql_1.0.0")]
+    partial class mysql_100
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -116,6 +116,81 @@ namespace Portal.Infrastructure.Migrations
                             ImageAlt = "Third slide",
                             ImageSrc = "/img/carousel/itec-index-banner.jpg"
                         });
+                });
+
+            modelBuilder.Entity("Portal.Domain.Entities.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateTimeCreated")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("OrderNumber")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<double>("TotalPrice")
+                        .HasColumnType("double");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("Portal.Domain.Entities.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("AkceID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderID")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("double");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AkceID");
+
+                    b.HasIndex("OrderID");
+
+                    b.ToTable("OrderItems");
+                });
+
+            modelBuilder.Entity("Portal.Domain.Entities.OrderItem", b =>
+                {
+                    b.HasOne("Portal.Domain.Entities.Akce", "Akce")
+                        .WithMany()
+                        .HasForeignKey("AkceID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Portal.Domain.Entities.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Akce");
+
+                    b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("Portal.Domain.Entities.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 #pragma warning restore 612, 618
         }

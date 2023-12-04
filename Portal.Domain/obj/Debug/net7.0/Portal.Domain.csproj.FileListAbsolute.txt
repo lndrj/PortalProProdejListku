@@ -10,3 +10,25 @@
 /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Domain/obj/Debug/net7.0/refint/Portal.Domain.dll
 /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Domain/obj/Debug/net7.0/Portal.Domain.pdb
 /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Domain/obj/Debug/net7.0/ref/Portal.Domain.dll
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Domain\bin\Debug\net7.0\Portal.Domain.deps.json
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Domain\bin\Debug\net7.0\Portal.Domain.dll
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Domain\bin\Debug\net7.0\Portal.Domain.pdb
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Domain\obj\Debug\net7.0\Portal.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Domain\obj\Debug\net7.0\Portal.Domain.AssemblyInfoInputs.cache
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Domain\obj\Debug\net7.0\Portal.Domain.AssemblyInfo.cs
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Domain\obj\Debug\net7.0\Portal.Domain.csproj.CoreCompileInputs.cache
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Domain\obj\Debug\net7.0\Portal.Domain.dll
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Domain\obj\Debug\net7.0\refint\Portal.Domain.dll
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Domain\obj\Debug\net7.0\Portal.Domain.pdb
+C:\Users\l1_ondrej\Downloads\PortalProProdejListku-main\Portal.Domain\obj\Debug\net7.0\ref\Portal.Domain.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Domain\bin\Debug\net7.0\Portal.Domain.deps.json
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Domain\bin\Debug\net7.0\Portal.Domain.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Domain\bin\Debug\net7.0\Portal.Domain.pdb
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Domain\obj\Debug\net7.0\Portal.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Domain\obj\Debug\net7.0\Portal.Domain.AssemblyInfoInputs.cache
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Domain\obj\Debug\net7.0\Portal.Domain.AssemblyInfo.cs
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Domain\obj\Debug\net7.0\Portal.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Domain\obj\Debug\net7.0\Portal.Domain.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Domain\obj\Debug\net7.0\refint\Portal.Domain.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Domain\obj\Debug\net7.0\Portal.Domain.pdb
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Domain\obj\Debug\net7.0\ref\Portal.Domain.dll

@@ -9,97 +9,97 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Portal.Web
 build_property.RootNamespace = Portal.Web
-build_property.ProjectDir = /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/
+build_property.ProjectDir = C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Web\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web
+build_property.MSBuildProjectDirectory = C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Accounts/Accounts.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudHMvQWNjb3VudHMuY3NodG1s
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Accounts/Accounts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudHNcQWNjb3VudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Accounts/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudHMvRWRpdC5jc2h0bWw=
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Accounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/AdminHome/IndexAdmin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWRtaW5Ib21lL0luZGV4QWRtaW4uY3NodG1s
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/AdminHome/IndexAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Ib21lXEluZGV4QWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Akce/Akce.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWtjZS9Ba2NlLmNzaHRtbA==
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Akce/Akce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWtjZVxBa2NlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Akce/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWtjZS9DcmVhdGUuY3NodG1s
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Akce/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWtjZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Akce/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWtjZS9FZGl0LmNzaHRtbA==
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Akce/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWtjZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Discussion/Discussion.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRGlzY3Vzc2lvbi9EaXNjdXNzaW9uLmNzaHRtbA==
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Discussion/Discussion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY3Vzc2lvblxEaXNjdXNzaW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Requests/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUmVxdWVzdHMvRWRpdC5jc2h0bWw=
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Requests/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVxdWVzdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Requests/Requests.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUmVxdWVzdHMvUmVxdWVzdHMuY3NodG1s
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Requests/Requests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVxdWVzdHNcUmVxdWVzdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/LoginSignup/Views/Login/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTG9naW5TaWdudXAvVmlld3MvTG9naW4vTG9naW4uY3NodG1s
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/LoginSignup/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5TaWdudXBcVmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/LoginSignup/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTG9naW5TaWdudXAvVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/LoginSignup/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5TaWdudXBcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Areas/LoginSignup/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvTG9naW5TaWdudXAvVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/LoginSignup/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5TaWdudXBcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-n5gszefvmp
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-an2pzo94it
 
-[/Users/lukas/Desktop/Tretak/AP5PW/PortalProProdejListku/Portal.Web/Views/Shared/_LayoutAdmin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXRBZG1pbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = b-72dqdail6d
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-hc7jfmra9u
