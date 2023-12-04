@@ -1,26 +1,49 @@
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using Portal.Application.Abstraction;
 using Portal.Application.Implementation;
 using Portal.Infrastructure.Database;
+using Portal.Infrastructure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//Databaze
-string connectionString = builder.Configuration.GetConnectionString("MySQL");
-ServerVersion serverVersion = new MySqlServerVersion("8.0.34");
-builder.Services.AddDbContext<PortalDBContext>(optionsBuilder => optionsBuilder.UseMySql(connectionString, serverVersion));
-
-
-//Services databaze - admin
-builder.Services.AddScoped<IAkceAdminService, AkceAdminService>();
-builder.Services.AddScoped<IAccountsAdminService, AccountsAdminService>();
-builder.Services.AddScoped<IDiscussionAdminService, DiscussionAdminService>();
-builder.Services.AddScoped<IRequestsAdminService, RequestsAdminService>();
+builder.Services.AddScoped<IAkceAdminService, AkceAdminDFService>();
+builder.Services.AddScoped<IAccountsAdminService, AccountsAdminDFService>();
+builder.Services.AddScoped<IDiscussionAdminService, DiscussionAdminDFService>();
+builder.Services.AddScoped<IRequestsAdminService, RequestsAdminDFService>();
 builder.Services.AddScoped<IHomeService, HomeService>();
 
+//Identity
+builder.Services.AddIdentity<User, Role>()
+            .AddEntityFrameworkStores<PortalDBContext>()
+            .AddDefaultTokenProviders();
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.Password.RequireDigit = false;
+    options.Password.RequiredLength = 1;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequiredUniqueChars = 1;
+
+    options.Lockout.AllowedForNewUsers = true;
+    options.Lockout.MaxFailedAccessAttempts = 10;
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+
+    options.User.RequireUniqueEmail = true;
+});
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Cookie.HttpOnly = true;
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+    options.LoginPath = "/Security/Account/Login";
+    options.LogoutPath = "/Security/Account/Logout";
+    options.SlidingExpiration = true;
+});
 
 var app = builder.Build();
 

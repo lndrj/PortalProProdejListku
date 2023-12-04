@@ -1,11 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Portal.Application.Abstraction;
 using Portal.Domain.Entities;
 using Portal.Infrastructure.Database;
+using Portal.Infrastructure.Identity;
+using Portal.Infrastructure.Identity.Enums;
 
 namespace Portal.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = nameof(Roles.Admin) + ", " + nameof(Roles.Manager))]
     public class AkceController : Controller
     {
         IAkceAdminService _akceAdminService;
@@ -50,8 +54,6 @@ namespace Portal.Web.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            Console.WriteLine($"Přijato ID pro aktualizaci: {id}");
-
             Akce? akce = _akceAdminService.Select().FirstOrDefault(ak => ak.Id == id);
 
             if (akce == null)

@@ -8,7 +8,6 @@ namespace Portal.Domain.Entities
 {
     public abstract class Entity<T>
     {
-        //[Key] atribut, pokud neni zrejmy
         public T Id { get; set; }
     }
 }

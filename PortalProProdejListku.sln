@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Tests", "Portal.Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Infrastructure", "Portal.Infrastructure\Portal.Infrastructure.csproj", "{B2A301E2-7CE2-435B-ACD3-298B8D6F08DA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Web", "Portal.Web\Portal.Web.csproj", "{FCD1476F-66E8-4C4C-8587-D2EEABC69277}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Web", "Portal.Web\Portal.Web.csproj", "{907ADDCA-2C13-4AAC-A55B-EED9A4F4A812}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,15 +35,15 @@ Global
 		{B2A301E2-7CE2-435B-ACD3-298B8D6F08DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2A301E2-7CE2-435B-ACD3-298B8D6F08DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2A301E2-7CE2-435B-ACD3-298B8D6F08DA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FCD1476F-66E8-4C4C-8587-D2EEABC69277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCD1476F-66E8-4C4C-8587-D2EEABC69277}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCD1476F-66E8-4C4C-8587-D2EEABC69277}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCD1476F-66E8-4C4C-8587-D2EEABC69277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{907ADDCA-2C13-4AAC-A55B-EED9A4F4A812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{907ADDCA-2C13-4AAC-A55B-EED9A4F4A812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{907ADDCA-2C13-4AAC-A55B-EED9A4F4A812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{907ADDCA-2C13-4AAC-A55B-EED9A4F4A812}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0D133648-8AE8-42FD-A98B-BF90188C5558}
+		SolutionGuid = {5CDD2F81-E5E0-44D1-A4E6-5FEDF15157B7}
 	EndGlobalSection
 EndGlobal

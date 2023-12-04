@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using Portal.Application.Abstraction;
 using Portal.Domain.Entities;
 using Portal.Infrastructure.Database;
@@ -24,7 +23,7 @@ namespace Portal.Application.Implementation
 
         public void Create(Akce akce)
         {
-
+           
             _portalDbContext.Akces?.Add(akce);
             _portalDbContext.SaveChanges();
         }
@@ -35,7 +34,7 @@ namespace Portal.Application.Implementation
 
             Akce? akce = _portalDbContext.Akces.FirstOrDefault(ak => ak.Id == id);
 
-            if (akce != null)
+            if(akce != null)
             {
                 _portalDbContext.Akces.Remove(akce);
                 _portalDbContext.SaveChanges();
@@ -47,26 +46,15 @@ namespace Portal.Application.Implementation
 
         public void Update(Akce akce)
         {
-            Akce? aktualizovanaAkce = _portalDbContext.Akces.FirstOrDefault(a => a.Id == akce.Id);
-
+            Akce? aktualizovanaAkce = _portalDbContext.Akces.FirstOrDefault(ak => ak.Id == ak.Id);
             if (aktualizovanaAkce != null)
             {
-                _portalDbContext.Entry(aktualizovanaAkce).State = EntityState.Detached;
-
-                // Zde načtěte znovu aktuální entitu bez sledování
-                aktualizovanaAkce = _portalDbContext.Akces.FirstOrDefault(a => a.Id == akce.Id);
-
-                // Nastavte stav entity na Modified
-                _portalDbContext.Entry(aktualizovanaAkce).State = EntityState.Modified;
-
-                // Provádějte aktualizaci
-                aktualizovanaAkce.Name = akce.Name;
-                aktualizovanaAkce.Description = akce.Description;
-                aktualizovanaAkce.Price = akce.Price;
-                aktualizovanaAkce.ImageSrc = akce.ImageSrc;
-
-                _portalDbContext.SaveChanges();
+            aktualizovanaAkce.Name = akce.Name;
+            aktualizovanaAkce.Description = akce.Description;
+            aktualizovanaAkce.Price = akce.Price;
+            aktualizovanaAkce.ImageSrc = akce.ImageSrc;       
             }
+
         }
     }
 }
