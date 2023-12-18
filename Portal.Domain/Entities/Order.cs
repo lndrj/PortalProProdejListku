@@ -11,8 +11,7 @@ namespace Portal.Domain.Entities
 {
     public class Order : Entity<int>
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-        public DateTime DateTimeCreated { get; protected set; }
+        public DateTime DateTimeCreated { get; set; }
 
         [Required]
         public string OrderNumber { get; set; }

@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">UTB.Eshop.Web</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Portál pro prodej vstupenek</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,10 +48,10 @@
                         @if (User.Identity.IsAuthenticated == true && (User.IsInRole(nameof(Roles.Customer))))
                         {
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownCustomer" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Orders</a>
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownCustomer" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Objednávky</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownCustomer">
                                     <li class="nav-item">
-                                        <a class="dropdown-item text-dark" asp-area="Customer" asp-controller="CustomerOrders" asp-action="Index">My Orders</a>
+                                        <a class="dropdown-item text-dark" asp-area="Customer" asp-controller="CustomerOrders" asp-action="Index">Mé objednávky</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item text-dark" asp-area="Customer" asp-controller="CustomerOrderCart" asp-action="ApproveOrderInSession">Approve Current Order</a>
@@ -75,17 +75,17 @@
                         @if (User.Identity.IsAuthenticated == false)
                         {
                             <ul class="navbar-nav navbar-right">
-                                <li class="nav-item"><a class="nav-link text-dark" asp-area="Security" asp-controller="Account" asp-action="Register"><i class="bi bi-person-plus"></i> Sign Up</a></li>
-                                <li class="nav-item"><a class="nav-link text-dark" asp-area="Security" asp-controller="Account" asp-action="Login"><i class="bi bi-unlock"></i> Login</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" asp-area="Security" asp-controller="Account" asp-action="Register"><i class="bi bi-person-plus"></i>Registrovat</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" asp-area="Security" asp-controller="Account" asp-action="Login"><i class="bi bi-unlock"></i>Přihlásit</a></li>
                             </ul>
                         }
                         else
                         {
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i> Logged as @User.Identity.Name</a>
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i> Přihlášen jako @User.Identity.Name</a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item text-dark" asp-area="Security" asp-controller="Account" asp-action="Logout"><i class="bi bi-person-slash me-1"></i> Logout</a></li>
+                                        <li><a class="dropdown-item text-dark" asp-area="Security" asp-controller="Account" asp-action="Logout"><i class="bi bi-person-slash me-1"></i> Odhlásit se</a></li>
                                     </ul>
                                 </li>
                             </ul>

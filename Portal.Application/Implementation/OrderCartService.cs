@@ -22,28 +22,28 @@ namespace Portal.Application.Implementation
         }
 
 
-        public double AddOrderItemsToSession(int? productId, ISession session)
+        public double AddOrderItemsToSession(int? akceId, ISession session)
         {
             //get total price from session
             double totalPrice = session.GetDouble(totalPriceString).GetValueOrDefault();
 
 
             //geet product which should be added to cart/session
-            Akce? akce = _portalDbContext.Akces.FirstOrDefault(prod => prod.Id == productId);
+            Akce? akce = _portalDbContext.Akces.FirstOrDefault(akc => akc.Id == akceId);
 
             if (akce != null)
             {
                 //get list of order items from session
                 List<OrderItem> orderItems = session.GetObject<List<OrderItem>>(orderItemsString);
                 OrderItem? orderItemInSession = null;
-                //if the list is already in the session, find the order item with the ProductID, otherwise, create new list
+                //if the list is already in the session, find the order item with the akceId, otherwise, create new list
                 if (orderItems != null)
                     orderItemInSession = orderItems.Find(oi => oi.AkceID == akce.Id);
                 else
                     orderItems = new List<OrderItem>();
 
 
-                //if there is order item with ProductID, increase amount and price, otherwise, add new OrderItem
+                //if there is order item with akceId, increase amount and price, otherwise, add new OrderItem
                 if (orderItemInSession != null)
                 {
                     ++orderItemInSession.Amount;
@@ -103,6 +103,7 @@ namespace Portal.Application.Implementation
                 //create new order and connect it with the list of the order items
                 Order order = new Order()
                 {
+                    DateTimeCreated = DateTime.UtcNow,
                     OrderNumber = Convert.ToBase64String(Guid.NewGuid().ToByteArray()),
                     TotalPrice = totalPrice,
                     OrderItems = orderItems,

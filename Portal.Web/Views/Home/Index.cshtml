@@ -75,7 +75,14 @@
 								</div>
 								<!-- Product actions-->
 								<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-									<div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="Buy(@Model.Akces[i].Id,'@Url.Action(nameof(CustomerOrderCartController.AddOrderItemsToSession), nameof(CustomerOrderCartController).Replace(nameof(Controller), String.Empty), new { Area = nameof(Portal.Web.Areas.Customer) })', '#total_price', '@System.Globalization.CultureInfo.CurrentCulture.Name')">Add to cart</a></div>
+									<div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="Buy(@Model.Akces[i].Id,'@Url.Action(nameof(CustomerOrderCartController.AddOrderItemsToSession),
+																												nameof(CustomerOrderCartController).Replace(nameof(Controller), String.Empty),
+																												new { Area = nameof(Portal.Web.Areas.Customer) })',
+																												'#total_price',
+																												'@System.Globalization.CultureInfo.CurrentCulture.Name')">
+											Add to cart
+									</a>
+									</div>
 								</div>
 							</div>
 						</div>
