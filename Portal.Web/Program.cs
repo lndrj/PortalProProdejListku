@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Portal.Application.Abstraction;
 using Portal.Application.Implementation;
 using Portal.Infrastructure.Database;
@@ -9,11 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<IAkceAdminService, AkceAdminDFService>();
-builder.Services.AddScoped<IAccountsAdminService, AccountsAdminDFService>();
-builder.Services.AddScoped<IDiscussionAdminService, DiscussionAdminDFService>();
-builder.Services.AddScoped<IRequestsAdminService, RequestsAdminDFService>();
-builder.Services.AddScoped<IHomeService, HomeService>();
+
+//EFCore
+string connectionString = builder.Configuration.GetConnectionString("MySQL");
+ServerVersion serverVersion = new MySqlServerVersion("8.0.34");
+builder.Services.AddDbContext<PortalDBContext>(
+	optionsBuilder => optionsBuilder.UseMySql(connectionString, serverVersion));
+
 
 //Identity
 builder.Services.AddIdentity<User, Role>()
@@ -45,6 +48,16 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.SlidingExpiration = true;
 });
 
+
+builder.Services.AddScoped<IAkceAdminService, AkceAdminService>();
+//builder.Services.AddScoped<IAccountsAdminService, AccountsAdminService>();
+builder.Services.AddScoped<IAccountService, AccountIdentityService>();
+builder.Services.AddScoped<IDiscussionAdminService, DiscussionAdminService>();
+builder.Services.AddScoped<IRequestsAdminService, RequestsAdminService>();
+builder.Services.AddScoped<IHomeService, HomeService>();
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -60,6 +73,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

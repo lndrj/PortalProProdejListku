@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Portal.Application.Abstraction;
 using Portal.Domain.Entities;
 using Portal.Infrastructure.Database;
-using Portal.Infrastructure.Identity;
 using Portal.Infrastructure.Identity.Enums;
 
 namespace Portal.Web.Areas.Admin.Controllers

@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Portal.Web</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">UTB.Eshop.Web</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,16 +26,42 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        @if (User.Identity.IsAuthenticated == true && (User.IsInRole(nameof(Roles.Admin)) || User.IsInRole(nameof(Roles.Manager))))
+                        {
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminHome" asp-action="IndexAdmin">Admin</a>
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Akce" asp-action="Akce">Akce</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Login" asp-controller="Login" asp-action="Login">Login</a>
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Accounts" asp-action="Accounts">Uživatelé</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Signup" asp-controller="Signup" asp-action="Signup">Signup</a>
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Discussion" asp-action="Discussion">Diskuze</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Requests" asp-action="Requests">Požadavky</a>
+                        </li>
+                        }
                     </ul>
+                    @{
+                        @if (User.Identity.IsAuthenticated == false)
+                        {
+                            <ul class="navbar-nav navbar-right">
+                                <li class="nav-item"><a class="nav-link text-dark" asp-area="Security" asp-controller="Account" asp-action="Register"><i class="bi bi-person-plus"></i> Sign Up</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" asp-area="Security" asp-controller="Account" asp-action="Login"><i class="bi bi-unlock"></i> Login</a></li>
+                            </ul>
+                        }
+                        else
+                        {
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i> Logged as @User.Identity.Name</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item text-dark" asp-area="Security" asp-controller="Account" asp-action="Logout"><i class="bi bi-person-slash me-1"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        }
+                    }
                 </div>
             </div>
         </nav>

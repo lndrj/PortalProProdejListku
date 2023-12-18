@@ -36,3 +36,6 @@ C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructur
 C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\bin\Debug\net7.0\Portal.Domain.pdb
 C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.csproj.CopyComplete
 C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\ref\Portal.Infrastructure.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.sourcelink.json
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\bin\Debug\net7.0\Portal.Infrastructure.runtimeconfig.json
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Infrastructure\obj\Debug\net7.0\Portal.Infrastructure.genruntimeconfig.cache

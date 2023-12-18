@@ -30,22 +30,24 @@ namespace Portal.Infrastructure.Database
             base.OnModelCreating(modelBuilder);
 
             DatabaseInit dbInit = new DatabaseInit();
-
             modelBuilder.Entity<Akce>().HasData(dbInit.GetAkces());
             modelBuilder.Entity<Carousel>().HasData(dbInit.GetCarousels());
 
 
-            //Identity - Role a User inicializace
+            //Identity - User and Role initialization
+            //roles must be added first
             modelBuilder.Entity<Role>().HasData(dbInit.CreateRoles());
 
+            //then, create users ..
             (User admin, List<IdentityUserRole<int>> adminUserRoles) = dbInit.CreateAdminWithRoles();
             (User manager, List<IdentityUserRole<int>> managerUserRoles) = dbInit.CreateManagerWithRoles();
 
+            //.. and add them to the table
             modelBuilder.Entity<User>().HasData(admin, manager);
 
+            //and finally, connect the users with the roles
             modelBuilder.Entity<IdentityUserRole<int>>().HasData(adminUserRoles);
             modelBuilder.Entity<IdentityUserRole<int>>().HasData(managerUserRoles);
         }
-
     }
 }

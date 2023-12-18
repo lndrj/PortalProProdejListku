@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Portal.Application
 build_property.ProjectDir = C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

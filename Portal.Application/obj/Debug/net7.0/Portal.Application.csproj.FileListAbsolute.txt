@@ -31,3 +31,13 @@ C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\o
 C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\obj\Debug\net7.0\Portal.Application.dll
 C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\obj\Debug\net7.0\refint\Portal.Application.dll
 C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\obj\Debug\net7.0\Portal.Application.pdb
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\bin\Debug\net7.0\Portal.Application.deps.json
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\bin\Debug\net7.0\Portal.Application.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\bin\Debug\net7.0\Portal.Application.pdb
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\bin\Debug\net7.0\Portal.Domain.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\bin\Debug\net7.0\Portal.Infrastructure.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\bin\Debug\net7.0\Portal.Domain.pdb
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\bin\Debug\net7.0\Portal.Infrastructure.pdb
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\obj\Debug\net7.0\Portal.Application.csproj.CopyComplete
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\obj\Debug\net7.0\ref\Portal.Application.dll
+C:\Users\Rark1\Desktop\UTB\3 ZS\AP5PW\PortalProProdejListku\Portal.Application\obj\Debug\net7.0\Portal.Application.sourcelink.json
