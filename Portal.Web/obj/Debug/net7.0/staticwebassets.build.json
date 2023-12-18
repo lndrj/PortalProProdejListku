@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u3s6X7GIIZP6hbmjVX0sjK5IlcvCQ9S04sTKWl+uwY4=",
+  "Hash": "ifvALq6bbPcwzMpo9PhWppDLjzkEUp8m8vXtcGccAso=",
   "Source": "Portal.Web",
   "BasePath": "_content/Portal.Web",
   "Mode": "Default",
@@ -414,6 +414,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\dialogs.js"
+    },
+    {
+      "Identity": "C:\\Users\\Rark1\\Desktop\\UTB\\3 ZS\\AP5PW\\PortalProProdejListku\\Portal.Web\\wwwroot\\js\\product.js",
+      "SourceId": "Portal.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rark1\\Desktop\\UTB\\3 ZS\\AP5PW\\PortalProProdejListku\\Portal.Web\\wwwroot\\",
+      "BasePath": "_content/Portal.Web",
+      "RelativePath": "js/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
     },
     {
       "Identity": "C:\\Users\\Rark1\\Desktop\\UTB\\3 ZS\\AP5PW\\PortalProProdejListku\\Portal.Web\\wwwroot\\js\\site.js",

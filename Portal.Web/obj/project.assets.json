@@ -3564,7 +3564,10 @@
         },
         "runtime": {
           "bin/placeholder/Portal.Application.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Portal.Domain/1.0.0": {
         "type": "project",

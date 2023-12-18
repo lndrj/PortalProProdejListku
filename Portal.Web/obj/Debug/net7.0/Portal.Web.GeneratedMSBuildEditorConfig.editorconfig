@@ -46,6 +46,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlzY3Vzc2lvblxEaXNjdXNzaW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/OrderItem/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJJdGVtXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/OrderItem/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJJdGVtXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/Requests/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVxdWVzdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,6 +68,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Customer/Views/CustomerOrders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcQ3VzdG9tZXJPcmRlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Customer/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Customer/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Security/Views/Account/Login.cshtml]

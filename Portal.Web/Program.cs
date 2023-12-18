@@ -4,12 +4,29 @@ using Portal.Application.Abstraction;
 using Portal.Application.Implementation;
 using Portal.Infrastructure.Database;
 using Portal.Infrastructure.Identity;
+using System.Globalization;
+using Portal.Application.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//culture settings for server side if needed (it uses czech currency and uses decimal comma)
+var cultInfo = new CultureInfo("cs-cz");
+CultureInfo.DefaultThreadCurrentCulture = cultInfo;
+CultureInfo.DefaultThreadCurrentUICulture = cultInfo;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+//configuration of session
+builder.Services.AddDistributedMemoryCache(); // Adds a default in-memory implementation of IDistributedCache
+builder.Services.AddSession(options =>
+{
+    // Set a short timeout for easy testing.
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    // Make the session cookie essential
+    options.Cookie.IsEssential = true;
+});
 
 //EFCore
 string connectionString = builder.Configuration.GetConnectionString("MySQL");
@@ -56,7 +73,13 @@ builder.Services.AddScoped<IDiscussionAdminService, DiscussionAdminService>();
 builder.Services.AddScoped<IRequestsAdminService, RequestsAdminService>();
 builder.Services.AddScoped<IHomeService, HomeService>();
 
+builder.Services.AddScoped<ISecurityService, SecurityIdentityService>();
 
+builder.Services.AddScoped<IOrderCartService, OrderCartService>();
+builder.Services.AddScoped<IOrderCustomerService, OrderCustomerService>();
+
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IOrderItemService, OrderItemService>();
 
 var app = builder.Build();
 
@@ -70,6 +93,9 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+//Session
+app.UseSession();
 
 app.UseRouting();
 

@@ -1,42 +1,42 @@
 ﻿@model CarouselProductViewModel
 
 @{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Portál pro prodej vstupenek</h1>
+	<h1 class="display-4">Portál pro prodej vstupenek</h1>
 </div>
 
 @{
-    if (Model != null && Model.Carousels != null && Model.Carousels.Count > 0)
-    {
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+	if (Model != null && Model.Carousels != null && Model.Carousels.Count > 0)
+	{
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
 
-                @for (int i = 0; i < Model.Carousels.Count; i++)
-                    {
-                        ViewBag.Active = String.Empty;
-                        if(i == 0)
-                        {
-                            ViewBag.Active = "active";
-                        }
-                    <div class="carousel-item @ViewBag.Active">
-                        <img src="@Model.Carousels[i].ImageSrc " class="d-block w-100" alt="@Model.Carousels[i].ImageAlt">
-                    </div>
-                }
-            </div>
+				@for (int i = 0; i < Model.Carousels.Count; i++)
+				{
+					ViewBag.Active = String.Empty;
+					if (i == 0)
+					{
+						ViewBag.Active = "active";
+					}
+					<div class="carousel-item @ViewBag.Active">
+						<img src="@Model.Carousels[i].ImageSrc " class="d-block w-100" alt="@Model.Carousels[i].ImageAlt">
+					</div>
+				}
+			</div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    }
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	}
 }
 
 
@@ -44,50 +44,60 @@
 
 <!-- Produkty -->
 @{
-    if (Model != null && Model.Akces != null && Model.Akces.Count > 0)
-    {
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+	if (Model != null && Model.Akces != null && Model.Akces.Count > 0)
+	{
+		<section class="py-5">
+			<div class="container px-4 px-lg-5 mt-5">
+				<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-                    @for (int i = 0; i < Model.Akces.Count; i++)
-                    {
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Product image-->
-                                <img class="card-img-top" src="@Model.Akces[i].ImageSrc" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">@Model.Akces[i].Name</h5>
-                                        <!-- Product reviews-->
-                                        <div class="d-flex justify-content-center small text-warning mb-2">
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                        </div>
-                                        <!-- Product price-->
-                                        @Model.Akces[i].Price
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                </div>
-            </div>
-        </section>
-    }
+					@for (int i = 0; i < Model.Akces.Count; i++)
+					{
+						<div class="col mb-5">
+							<div class="card h-100">
+								<!-- Product image-->
+								<img class="card-img-top" src="@Model.Akces[i].ImageSrc" alt="..." />
+								<!-- Product details-->
+								<div class="card-body p-4">
+									<div class="text-center">
+										<!-- Product name-->
+										<h5 class="fw-bolder">@Model.Akces[i].Name</h5>
+										<!-- Product reviews-->
+										<div class="d-flex justify-content-center small text-warning mb-2">
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+										</div>
+										<!-- Product price-->
+										@Model.Akces[i].Price
+									</div>
+								</div>
+								<!-- Product actions-->
+								<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+									<div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="Buy(@Model.Akces[i].Id,'@Url.Action(nameof(CustomerOrderCartController.AddOrderItemsToSession), nameof(CustomerOrderCartController).Replace(nameof(Controller), String.Empty), new { Area = nameof(Portal.Web.Areas.Customer) })', '#total_price', '@System.Globalization.CultureInfo.CurrentCulture.Name')">Add to cart</a></div>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+		</section>
+	}
 }
 
 
 
 @section Styles {
-    <link rel="stylesheet" href="~/css/shop_home.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/shop_home.css" asp-append-version="true" />
+}
+
+@section Scripts
+{
+	<environment include="Development">
+		<script src="~/js/product.js"></script>
+	</environment>
+	<environment exclude="Development">
+		<script src="~/js/product.min.js"></script>
+	</environment>
 }

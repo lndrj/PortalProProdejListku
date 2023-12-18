@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Portal.Domain.Entities;
 using Portal.Infrastructure.Identity;
+using Portal.Web.Models.Database.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,6 +49,14 @@ namespace Portal.Infrastructure.Database
             //and finally, connect the users with the roles
             modelBuilder.Entity<IdentityUserRole<int>>().HasData(adminUserRoles);
             modelBuilder.Entity<IdentityUserRole<int>>().HasData(managerUserRoles);
+
+            //Přidané
+            //configuration of User entity using IUser interface property inside Order entity
+            modelBuilder.Entity<Order>().HasOne<User>(e => e.User as User);
+
+
+            //configure DateTimeCreated for Order entity from configuration class
+            modelBuilder.ApplyConfiguration<Order>(new OrderConfiguration_MySQL());
         }
     }
 }

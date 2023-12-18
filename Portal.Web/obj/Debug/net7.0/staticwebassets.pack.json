@@ -81,6 +81,10 @@
       "PackagePath": "staticwebassets\\js\\dialogs.js"
     },
     {
+      "Id": "C:\\Users\\Rark1\\Desktop\\UTB\\3 ZS\\AP5PW\\PortalProProdejListku\\Portal.Web\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
       "Id": "C:\\Users\\Rark1\\Desktop\\UTB\\3 ZS\\AP5PW\\PortalProProdejListku\\Portal.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
