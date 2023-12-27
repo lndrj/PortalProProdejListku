@@ -1,0 +1,50 @@
+﻿@model Portal.Application.ViewModels.CartViewModel
+
+@{
+	ViewData["Title"] = "Shopping Cart";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (Model != null && Model.orderItems != null && Model.orderItems.Any())
+{
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Product</th>
+				<th>Amount</th>
+				<th>Price</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model.orderItems)
+			{
+				<tr>
+					<td>@item.Akce.Name</td>
+					<td>@item.Amount</td>
+					<td>@item.Price.ToString("C2")</td>
+					<td>
+						<form asp-area="Customer" asp-controller="CustomerOrderCart" asp-action="RemoveFromCart" method="post">
+							<input type="hidden" name="akceId" value="@item.AkceID" />
+							<button type="submit" class="btn btn-danger">Remove</button>
+						</form>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+
+	
+
+		<div>Total Price: @Model.totalPrice.ToString("C2")</div>
+
+		<div>
+			<a asp-area="Customer" asp-controller="CustomerOrderCart" asp-action="ApproveOrderInSession" class="btn btn-success">Approve Current Order</a>
+		</div>
+
+}
+else
+{
+	<p>Your shopping cart is empty.</p>
+}

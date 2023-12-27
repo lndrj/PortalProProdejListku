@@ -20,7 +20,7 @@ namespace Portal.Infrastructure.Database
         {
             DatabaseInit databaseInit = new DatabaseInit();
             Akces = databaseInit.GetAkces().ToList();
-            Accounts = databaseInit.GetAccounts().ToList();
+            //Accounts = databaseInit.GetAccounts().ToList();
             Discussions = databaseInit.GetDiscussions().ToList();
             Requests = databaseInit.GetRequests().ToList();
             Carousels = databaseInit.GetCarousels().ToList();

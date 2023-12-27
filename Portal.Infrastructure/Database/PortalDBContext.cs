@@ -33,6 +33,13 @@ namespace Portal.Infrastructure.Database
             DatabaseInit dbInit = new DatabaseInit();
             modelBuilder.Entity<Akce>().HasData(dbInit.GetAkces());
             modelBuilder.Entity<Carousel>().HasData(dbInit.GetCarousels());
+            modelBuilder.Entity<AdminRequest>().HasData(dbInit.GetRequests());
+            modelBuilder.Entity<Diskuze>().HasData(dbInit.GetDiscussions());
+            
+            
+            //Staré
+            //modelBuilder.Entity<Account>().HasData(dbInit.GetAccounts());
+            
 
 
             //Identity - User and Role initialization

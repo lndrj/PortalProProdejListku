@@ -70,6 +70,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/AkceDetail/Views/AkceDetail/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWtjZURldGFpbFxWaWV3c1xBa2NlRGV0YWlsXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/AkceDetail/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWtjZURldGFpbFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/AkceDetail/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWtjZURldGFpbFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Customer/Views/CustomerOrderCart/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcQ3VzdG9tZXJPcmRlckNhcnRcQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Rark1/Desktop/UTB/3 ZS/AP5PW/PortalProProdejListku/Portal.Web/Areas/Customer/Views/CustomerOrders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJcVmlld3NcQ3VzdG9tZXJPcmRlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -75,6 +75,52 @@ namespace Portal.Application.Implementation
             return totalPrice;
         }
 
+        //Přidané
+
+        public double RemoveOrderItemFromSession(int? akceId, ISession session)
+        {
+            double totalPrice = session.GetDouble(totalPriceString).GetValueOrDefault();
+            Akce? akce = _portalDbContext.Akces.FirstOrDefault(akc => akc.Id == akceId);
+
+            if (akce != null)
+            {
+                // Získání listu itemů objednávky
+                List<OrderItem> orderItems = session.GetObject<List<OrderItem>>(orderItemsString);
+
+                // Najdeme položku objednávky
+                OrderItem orderItemToRemove = orderItems.FirstOrDefault(oi => oi.AkceID == akce.Id);
+
+                if (orderItemToRemove != null)
+                {
+                    // Snížení celkové ceny a množství
+                    totalPrice -= orderItemToRemove.Price;
+                    orderItemToRemove.Amount--;
+
+                    // Odstraní vstupenku z košíku
+                    if (orderItemToRemove.Amount == 0)
+                    {
+                        orderItems.Remove(orderItemToRemove);
+                    }
+
+                    // Aktualizace sessionu
+                    session.SetObject(orderItemsString, orderItems);
+                    session.SetDouble(totalPriceString, totalPrice);
+                }
+            }
+
+            return totalPrice;
+        }
+
+        public double CalculateTotalPrice(List<OrderItem> orderItems)
+        {
+            if (orderItems == null)
+            {
+                return 0;
+            }
+
+            // Sečíst ceny všech položek
+            return orderItems.Sum(item => item.Price);
+        }
 
         public bool ApproveOrderInSession(int userId, ISession session)
         {

@@ -23,7 +23,7 @@ namespace Portal.Application.Implementation
 
         public void Create(Akce akce)
         {
-           
+
             _portalDbContext.Akces?.Add(akce);
             _portalDbContext.SaveChanges();
         }
@@ -34,7 +34,7 @@ namespace Portal.Application.Implementation
 
             Akce? akce = _portalDbContext.Akces.FirstOrDefault(ak => ak.Id == id);
 
-            if(akce != null)
+            if (akce != null)
             {
                 _portalDbContext.Akces.Remove(akce);
                 _portalDbContext.SaveChanges();
@@ -49,10 +49,16 @@ namespace Portal.Application.Implementation
             Akce? aktualizovanaAkce = _portalDbContext.Akces.FirstOrDefault(ak => ak.Id == ak.Id);
             if (aktualizovanaAkce != null)
             {
-            aktualizovanaAkce.Name = akce.Name;
-            aktualizovanaAkce.Description = akce.Description;
-            aktualizovanaAkce.Price = akce.Price;
-            aktualizovanaAkce.ImageSrc = akce.ImageSrc;       
+                aktualizovanaAkce.Name = akce.Name;
+                aktualizovanaAkce.Description = akce.Description;
+                aktualizovanaAkce.Price = akce.Price;
+                aktualizovanaAkce.Date = akce.Date;
+                aktualizovanaAkce.Time = akce.Time;
+                aktualizovanaAkce.ImageSrc = akce.ImageSrc;
+                aktualizovanaAkce.ImageSrcDetail = akce.ImageSrcDetail;
+                aktualizovanaAkce.PocetVstupenek = akce.PocetVstupenek;
+
+                _portalDbContext.SaveChanges();
             }
 
         }

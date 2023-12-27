@@ -7,6 +7,7 @@ using Portal.Infrastructure.Identity;
 using System.Globalization;
 using Portal.Application.Implementation;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 //culture settings for server side if needed (it uses czech currency and uses decimal comma)
@@ -67,7 +68,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 
 builder.Services.AddScoped<IAkceAdminService, AkceAdminService>();
-//builder.Services.AddScoped<IAccountsAdminService, AccountsAdminService>();
+builder.Services.AddScoped<IAccountsAdminService, AccountsAdminService>();
 builder.Services.AddScoped<IAccountService, AccountIdentityService>();
 builder.Services.AddScoped<IDiscussionAdminService, DiscussionAdminService>();
 builder.Services.AddScoped<IRequestsAdminService, RequestsAdminService>();

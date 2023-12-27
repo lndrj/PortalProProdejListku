@@ -55,7 +55,7 @@
 						<div class="col mb-5">
 							<div class="card h-100">
 								<!-- Product image-->
-								<img class="card-img-top" src="@Model.Akces[i].ImageSrc" alt="..." />
+								<img class="card-img-top mt-2 mx-auto" src="@Model.Akces[i].ImageSrc" alt="..." style="width: 200px; height: 295.42px" />
 								<!-- Product details-->
 								<div class="card-body p-4">
 									<div class="text-center">
@@ -75,13 +75,20 @@
 								</div>
 								<!-- Product actions-->
 								<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-									<div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="Buy(@Model.Akces[i].Id,'@Url.Action(nameof(CustomerOrderCartController.AddOrderItemsToSession),
-																												nameof(CustomerOrderCartController).Replace(nameof(Controller), String.Empty),
-																												new { Area = nameof(Portal.Web.Areas.Customer) })',
-																												'#total_price',
-																												'@System.Globalization.CultureInfo.CurrentCulture.Name')">
-											Add to cart
-									</a>
+									<div class="text-center">
+
+										<a class="btn btn-primary mt-auto" asp-area="AkceDetail" asp-controller="AkceDetail" asp-action="Detail" asp-route-id="@Model.Akces[i].Id">Detail akce</a>
+
+
+										<!--
+										<a class="btn btn-outline-dark mt-auto" onclick="Buy(@Model.Akces[i].Id,'@Url.Action(nameof(CustomerOrderCartController.AddOrderItemsToSession),
+																		nameof(CustomerOrderCartController).Replace(nameof(Controller), String.Empty),
+																		new { Area = nameof(Portal.Web.Areas.Customer) })',
+																													'#total_price',
+																													'@System.Globalization.CultureInfo.CurrentCulture.Name')">
+												Add to cart
+										</a>
+										-->
 									</div>
 								</div>
 							</div>

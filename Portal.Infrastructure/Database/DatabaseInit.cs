@@ -11,34 +11,79 @@ namespace Portal.Infrastructure.Database
         {
             IList<Akce> akces = new List<Akce>();
 
+            // Taylor Swift - Eras Tour
             akces.Add(new Akce
             {
                 Id = 1,
-                Name = "Rohlík",
-                Description = "Jídlo",
-                Price = 2,
-                ImageSrc = "/img/product/produkty-01.jpg"
+                Name = "Taylor Swift - Eras Tour",
+                Description = "Taylor Swift's Eras Tour",
+                Price = 100.00,
+                Date = DateTime.Now.AddMonths(1), // Datum za 1 měsíc od dnešního data
+                Time = DateTime.Now.AddMonths(1).AddHours(19), // Čas za 1 měsíc od dnešního data, 19:00
+                ImageSrc = "/img/product/taylor-swift.jpg",
+                ImageSrcDetail = "/img/product/taylor-swift-detail.jpg",
+                PocetVstupenek = 1000
             });
+
+            // Ed Sheeran - World Tour
             akces.Add(new Akce
             {
                 Id = 2,
-                Name = "Chleba",
-                Description = "Nejlepší chleba",
-                Price = 30,
-                ImageSrc = "/img/product/produkty-02.jpg"
+                Name = "Ed Sheeran - World Tour",
+                Description = "Ed Sheeran's World Tour",
+                Price = 80.00,
+                Date = DateTime.Now.AddMonths(2), // Datum za 2 měsíce od dnešního data
+                Time = DateTime.Now.AddMonths(2).AddHours(20), // Čas za 2 měsíce od dnešního data, 20:00
+                ImageSrc = "/img/product/ed-sheeran.jpg",
+                ImageSrcDetail = "/img/product/ed-sheeran-detail.jpg",
+                PocetVstupenek = 1500
             });
+
+            // John Mayer - Summer Tour
             akces.Add(new Akce
             {
                 Id = 3,
-                Name = "Vánočka",
-                Description = "Vánoce",
-                Price = 60,
-                ImageSrc = "/img/product/produkty-03.jpg"
+                Name = "John Mayer - Solo Tour",
+                Description = "John Mayer's Solo Tour",
+                Price = 75.00,
+                Date = DateTime.Now.AddMonths(3), // Datum za 3 měsíce od dnešního data
+                Time = DateTime.Now.AddMonths(3).AddHours(18), // Čas za 3 měsíce od dnešního data, 18:00
+                ImageSrc = "/img/product/john-mayer.jpg",
+                ImageSrcDetail = "/img/product/john-mayer-detail.jpg",
+                PocetVstupenek = 1200
+            });
+
+            // Olivia Rodrigo - Sour Tour
+            akces.Add(new Akce
+            {
+                Id = 4,
+                Name = "Olivia Rodrigo - Guts Tour",
+                Description = "Olivia Rodrigo's Guts Tour",
+                Price = 90.00,
+                Date = DateTime.Now.AddMonths(4), // Datum za 4 měsíce od dnešního data
+                Time = DateTime.Now.AddMonths(4).AddHours(21), // Čas za 4 měsíce od dnešního data, 21:00
+                ImageSrc = "/img/product/olivia-rodrigo.jpg",
+                ImageSrcDetail = "/img/product/olivia-rodrigo-detail.jpg",
+                PocetVstupenek = 800
+            });
+
+            // Gracie Abrams - Acoustic Showcase
+            akces.Add(new Akce
+            {
+                Id = 5,
+                Name = "Gracie Abrams - Acoustic Showcase",
+                Description = "Gracie Abrams' Acoustic Showcase",
+                Price = 60.00,
+                Date = DateTime.Now.AddMonths(5), // Datum za 5 měsíců od dnešního data
+                Time = DateTime.Now.AddMonths(5).AddHours(17), // Čas za 5 měsíců od dnešního data, 17:00
+                ImageSrc = "/img/product/gracie-abrams.jpg",
+                ImageSrcDetail = "/img/product/gracie-abrams-detail.jpg",
+                PocetVstupenek = 900
             });
 
             return akces;
         }
-
+        /*
         public IList<Account> GetAccounts()
         {
             IList<Account> accounts = new List<Account>();
@@ -81,7 +126,7 @@ namespace Portal.Infrastructure.Database
 
             return accounts;
         }
-
+        */
         public IList<Carousel> GetCarousels()
         {
             IList<Carousel> carousels = new List<Carousel>();

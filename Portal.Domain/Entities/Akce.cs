@@ -17,6 +17,9 @@ namespace Portal.Domain.Entities
         [Range(0, double.MaxValue)]
         public double Price { get; set; }
         public DateTime Date { get; set; }
+        public DateTime Time { get; set; }
         public string ImageSrc { get; set; }
+        public string ImageSrcDetail { get; set; }
+        public int PocetVstupenek { get; set; }
     }
 }

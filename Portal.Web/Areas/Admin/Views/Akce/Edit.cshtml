@@ -7,6 +7,10 @@
 
 <form asp-action="Edit" method="post">
     <div class="mb-3">
+        <label class="form-label" asp-for="Id">Id</label>
+        <input class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
         <label class="form-label" asp-for="Name">Name</label>
         <input class="form-control" asp-for="Name">
     </div>
@@ -19,8 +23,24 @@
         <input class="form-control" asp-for="Price">
     </div>
     <div class="mb-3">
+        <label class="form-label" asp-for="PocetVstupenek">Number of Tickets</label>
+        <input class="form-control" asp-for="PocetVstupenek">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Date">Date</label>
+        <input class="form-control" asp-for="Date" type="date">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Time">Time</label>
+        <input class="form-control" asp-for="Time" type="time">
+    </div>
+    <div class="mb-3">
         <label class="form-label" asp-for="ImageSrc">Image Source</label>
         <input class="form-control" asp-for="ImageSrc">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="ImageSrcDetail">Detail Image Source</label>
+        <input class="form-control" asp-for="ImageSrcDetail">
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>

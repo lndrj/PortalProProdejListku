@@ -10,6 +10,7 @@ using Portal.Domain.Entities;
 using Portal.Infrastructure.Identity;
 using Portal.Infrastructure.Identity.Enums;
 using Portal.Web.Controllers;
+using Portal.Application.ViewModels;
 
 namespace Portal.Web.Areas.Customer.Controllers
 {
@@ -28,6 +29,40 @@ namespace Portal.Web.Areas.Customer.Controllers
         {
             this.secureService = iSecure;
             this.orderCartService = orderCartService;
+        }
+
+        //Přidané
+
+        public IActionResult Cart()
+        {
+            var currentUser = secureService.GetCurrentUser(User);
+
+            var orderItems = HttpContext.Session.GetObject<List<OrderItem>>("OrderItems");
+
+            // Předání aktuálního obsahu košíku a uživatele do pohledu
+            var model = new CartViewModel
+            {
+                orderItems = orderItems,
+                totalPrice = orderCartService.CalculateTotalPrice(orderItems)
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult RemoveFromCart(int? akceId)
+        {
+            if (HttpContext.Session != null && HttpContext.Session.IsAvailable)
+            {
+                // Odstranění položky z košíku
+                double newTotalPrice = orderCartService.RemoveOrderItemFromSession(akceId, HttpContext.Session);
+
+                // Aktualizace celkové ceny v session
+                HttpContext.Session.SetDouble(totalPriceString, newTotalPrice);
+            }
+
+            // Yobrazení aktualizovaného obsahu košíku
+            return RedirectToAction(nameof(Cart));
         }
 
 

@@ -198,6 +198,26 @@ namespace Portal.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Requests");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Request = "První žádost na admina.",
+                            Solved = false
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Request = "Druhá žádost na admina.",
+                            Solved = true
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Request = "Třetí žádost na admina.",
+                            Solved = false
+                        });
                 });
 
             modelBuilder.Entity("Portal.Domain.Entities.Akce", b =>
@@ -216,13 +236,23 @@ namespace Portal.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("ImageSrcDetail")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
+                    b.Property<int>("PocetVstupenek")
+                        .HasColumnType("int");
+
                     b.Property<double>("Price")
                         .HasColumnType("double");
+
+                    b.Property<DateTime>("Time")
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("Id");
 
@@ -232,29 +262,62 @@ namespace Portal.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Jídlo",
-                            ImageSrc = "/img/product/produkty-01.jpg",
-                            Name = "Rohlík",
-                            Price = 2.0
+                            Date = new DateTime(2024, 1, 26, 15, 22, 29, 15, DateTimeKind.Local).AddTicks(3492),
+                            Description = "Taylor Swift's Eras Tour",
+                            ImageSrc = "/img/product/taylor-swift.jpg",
+                            ImageSrcDetail = "/img/product/taylor-swift-detail.jpg",
+                            Name = "Taylor Swift - Eras Tour",
+                            PocetVstupenek = 1000,
+                            Price = 100.0,
+                            Time = new DateTime(2024, 1, 27, 10, 22, 29, 15, DateTimeKind.Local).AddTicks(3542)
                         },
                         new
                         {
                             Id = 2,
-                            Date = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Nejlepší chleba",
-                            ImageSrc = "/img/product/produkty-02.jpg",
-                            Name = "Chleba",
-                            Price = 30.0
+                            Date = new DateTime(2024, 2, 26, 15, 22, 29, 15, DateTimeKind.Local).AddTicks(3549),
+                            Description = "Ed Sheeran's World Tour",
+                            ImageSrc = "/img/product/ed-sheeran.jpg",
+                            ImageSrcDetail = "/img/product/ed-sheeran-detail.jpg",
+                            Name = "Ed Sheeran - World Tour",
+                            PocetVstupenek = 1500,
+                            Price = 80.0,
+                            Time = new DateTime(2024, 2, 27, 11, 22, 29, 15, DateTimeKind.Local).AddTicks(3551)
                         },
                         new
                         {
                             Id = 3,
-                            Date = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Vánoce",
-                            ImageSrc = "/img/product/produkty-03.jpg",
-                            Name = "Vánočka",
-                            Price = 60.0
+                            Date = new DateTime(2024, 3, 26, 15, 22, 29, 15, DateTimeKind.Local).AddTicks(3554),
+                            Description = "John Mayer's Solo Tour",
+                            ImageSrc = "/img/product/john-mayer.jpg",
+                            ImageSrcDetail = "/img/product/john-mayer-detail.jpg",
+                            Name = "John Mayer - Solo Tour",
+                            PocetVstupenek = 1200,
+                            Price = 75.0,
+                            Time = new DateTime(2024, 3, 27, 9, 22, 29, 15, DateTimeKind.Local).AddTicks(3556)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Date = new DateTime(2024, 4, 26, 15, 22, 29, 15, DateTimeKind.Local).AddTicks(3560),
+                            Description = "Olivia Rodrigo's Guts Tour",
+                            ImageSrc = "/img/product/olivia-rodrigo.jpg",
+                            ImageSrcDetail = "/img/product/olivia-rodrigo-detail.jpg",
+                            Name = "Olivia Rodrigo - Guts Tour",
+                            PocetVstupenek = 800,
+                            Price = 90.0,
+                            Time = new DateTime(2024, 4, 27, 12, 22, 29, 15, DateTimeKind.Local).AddTicks(3562)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Date = new DateTime(2024, 5, 26, 15, 22, 29, 15, DateTimeKind.Local).AddTicks(3565),
+                            Description = "Gracie Abrams' Acoustic Showcase",
+                            ImageSrc = "/img/product/gracie-abrams.jpg",
+                            ImageSrcDetail = "/img/product/gracie-abrams-detail.jpg",
+                            Name = "Gracie Abrams - Acoustic Showcase",
+                            PocetVstupenek = 900,
+                            Price = 60.0,
+                            Time = new DateTime(2024, 5, 27, 8, 22, 29, 15, DateTimeKind.Local).AddTicks(3567)
                         });
                 });
 
@@ -316,6 +379,29 @@ namespace Portal.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Discussions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AkceID = 1,
+                            Komentar = "První komentář k akci 1.",
+                            UserID = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AkceID = 1,
+                            Komentar = "Druhý komentář k akci 1.",
+                            UserID = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AkceID = 2,
+                            Komentar = "Komentář k akci 2.",
+                            UserID = 3
+                        });
                 });
 
             modelBuilder.Entity("Portal.Domain.Entities.Order", b =>
@@ -325,7 +411,9 @@ namespace Portal.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("DateTimeCreated")
-                        .HasColumnType("datetime(6)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime(6)")
+                        .HasDefaultValueSql("NOW(6)");
 
                     b.Property<string>("OrderNumber")
                         .IsRequired()
@@ -338,6 +426,8 @@ namespace Portal.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Orders");
                 });
@@ -577,6 +667,17 @@ namespace Portal.Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Portal.Domain.Entities.Order", b =>
+                {
+                    b.HasOne("Portal.Infrastructure.Identity.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Portal.Domain.Entities.OrderItem", b =>
