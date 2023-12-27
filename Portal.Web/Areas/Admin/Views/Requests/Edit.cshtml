@@ -5,6 +5,6 @@
 <p>Change solved status for request ID @Model.Id ?</p>
 
 
-<form asp-action="Solved" method="post">
+<form asp-action="MarkAsSolved" asp-route-id="@Model.Id" method="post">
     <button type="submit">Confirm</button>
 </form>

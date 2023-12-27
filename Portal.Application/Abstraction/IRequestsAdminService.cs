@@ -7,7 +7,8 @@ namespace Portal.Application.Abstraction
 	{
 		IList<AdminRequest> Select();
         bool Delete(int id);
-        public void Update(AdminRequest adminRequest);
-    }
+        public void Update(int id);
+		void Create(AdminRequest adminRequest);
+	}
 }
 

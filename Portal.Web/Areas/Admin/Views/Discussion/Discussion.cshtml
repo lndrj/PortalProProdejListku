@@ -27,7 +27,7 @@
                         <td>@Model[i].UserID</td>
                         <td>@Model[i].AkceID</td>
                         <td>@Model[i].Komentar</td>
-                        <td><a asp-action="Delete" asp-route-Id="@Model[i].Id" onclick="return ConfirmDelete();">Delete</a></td>
+                        <td><a asp-action="Delete" asp-route-Id="@Model[i].Id" onclick="return ConfirmDelete();" class="btn btn-danger">Delete</a></td>
                     </tr>
                 }
             </tbody>

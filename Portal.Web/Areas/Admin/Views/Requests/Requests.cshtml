@@ -26,8 +26,8 @@
                         <th scope="row">@Model[i].Id</th>
                         <td>@Model[i].Request</td>
                         <td>@Model[i].Solved</td>
-                        <td><a asp-action="Delete" asp-route-Id="@Model[i].Id" onclick="return ConfirmDelete();">Delete</a></td>
-                        <td><a asp-action="Edit" asp-route-Id="@Model[i].Id">Change status</a></td>
+                        <td><a asp-action="Delete" asp-route-Id="@Model[i].Id" onclick="return ConfirmDelete();" class="btn btn-danger">Delete</a></td>
+                        <td><a asp-action="Edit" asp-route-Id="@Model[i].Id" class="btn btn-warning">Change status</a></td>
                     </tr>
                 }
             </tbody>

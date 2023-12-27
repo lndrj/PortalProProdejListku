@@ -38,8 +38,8 @@
                         <td>@Model[i].Time</td>
                         <td>@Model[i].ImageSrc</td>
                         <td>@Model[i].ImageSrcDetail</td>
-                        <td><a asp-action="Delete" asp-route-Id="@Model[i].Id" onclick="return ConfirmDelete();">Delete</a></td>
-                        <td><a asp-action="Edit" asp-route-Id="@Model[i].Id">Edit</a></td>
+                        <td><a asp-action="Delete" asp-route-Id="@Model[i].Id" onclick="return ConfirmDelete();" class="btn btn-danger">Delete</a></td>
+                        <td><a asp-action="Edit" asp-route-Id="@Model[i].Id" class="btn btn-warning">Edit</a></td>
                     </tr>
                 }
             </tbody>

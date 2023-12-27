@@ -74,10 +74,10 @@ namespace Portal.Web.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Solved(AdminRequest adminRequest)
+        public IActionResult MarkAsSolved(int id)
         {
             // Uloží se stav solved
-            _requestsAdminService.Update(adminRequest);
+            _requestsAdminService.Update(id);
             return RedirectToAction(nameof(Requests));
         }
 

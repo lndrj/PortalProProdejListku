@@ -1,7 +1,7 @@
 ﻿@model Akce
 
 
-<section class="py-5">
+<section class="py-3">
 	<div class="container px-4 px-lg-5 my-5">
 		<div class="row gx-4 gx-lg-5 align-items-center">
 			<!-- Obrázek produktu -->
@@ -11,6 +11,8 @@
 			<!-- Detaily produktu -->
 			<div class="col-md-6">
 				<h1 class="display-5 fw-bolder">@Model.Name</h1>
+				<h3>Datum: @Model.Date.ToString("dd.MM.yyyy")</h3>
+				<h3>Čas: @Model.Time.ToString("HH:mm:ss")</h3>
 				<div class="fs-5 mb-3">
 					<span>@Model.Price</span>
 				</div>
@@ -29,6 +31,44 @@
 	</div>
 </section>
 
+<hr />
+
+<section class="py-2">
+	<div class="container px-4 px-lg-5 my-5">
+		<div class="row gx-4 gx-lg-5 align-items-center">
+			<div class="col-md-12 d-flex flex-column">
+				<form class="d-flex flex-column">
+					<div class="form-group py-2 flex-fill">
+						<label for="exampleFormControlTextarea1" class="fw-bolder">Přidat příspěvek</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Napište svůj příspěvek zde..."></textarea>
+					</div>
+					
+					<button class="btn btn-primary" type="submit">Odeslat příspěvek</button>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<hr />
+
+<section class="py-2">
+	<div class="container px-4 px-lg-5 my-5">
+		<div class="row">
+			<!-- Příspěvek v diskuzi-->
+			<div class="col-md-4 mb-4 rounded">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Uživatel: </h5>
+						<p class="card-text">Příspěvek</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
 
 @section Scripts
 {

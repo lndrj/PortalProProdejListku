@@ -1,0 +1,16 @@
+﻿@model AdminRequest
+
+@{
+	ViewData["Title"] = "Žádost na adminy";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<form asp-action="Create" method="post">
+	<div class="mb-3">
+		<label class="form-label" asp-for="Request">Text žádosti</label>
+		<textarea class="form-control" asp-for="Request"></textarea>
+	</div>
+	<button type="submit" class="btn btn-primary">Odeslat</button>
+</form>

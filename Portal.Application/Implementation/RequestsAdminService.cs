@@ -33,9 +33,9 @@ namespace Portal.Application.Implementation
             return deleted;
         }
 
-        public void Update(AdminRequest adminRequest)
+        public void Update(int id)
         {
-            AdminRequest? aktualizovanyRequest = _portalDbContext.Requests.FirstOrDefault(req => req.Id == req.Id);
+            AdminRequest? aktualizovanyRequest = _portalDbContext.Requests.FirstOrDefault(req => req.Id == id);
             if (aktualizovanyRequest != null)
             {
                 aktualizovanyRequest.Solved = !aktualizovanyRequest.Solved;
@@ -43,6 +43,12 @@ namespace Portal.Application.Implementation
                 _portalDbContext.SaveChanges();
             }
         }
-    }
+
+		public void Create(AdminRequest adminRequest)
+		{
+			_portalDbContext.Requests.Add(adminRequest);
+			_portalDbContext.SaveChanges();
+		}
+	}
 }
 
