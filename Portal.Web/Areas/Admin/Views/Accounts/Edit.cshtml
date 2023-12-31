@@ -1,10 +1,47 @@
-﻿@model Account
+﻿@model Portal.Infrastructure.Identity.User
 
-<h2>Edit Account</h2>
+@{
+    ViewData["Title"] = "Editace uživatele s ID: " + Model.Id;
+}
 
-<p>Change IsAdmin status for user @Model.FirstName @Model.LastName ?</p>
+<h1>@ViewData["Title"]</h1>
 
+<div class="card mt-4">
+    <div class="card-body">
 
-<form asp-action="ToggleAdmin" method="post">
-    <button type="submit">Confirm</button>
-</form>
+        <form asp-action="Edit" method="post">
+
+            <div class="mb-3">
+                <label asp-for="UserName" class="fw-bold">Username</label>
+                <input asp-for="UserName" class="form-control" />
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="FirstName" class="fw-bold">First Name</label>
+                    <input asp-for="FirstName" class="form-control" />
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label asp-for="LastName" class="fw-bold">Last Name</label>
+                    <input asp-for="LastName" class="form-control" />
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label asp-for="Email" class="fw-bold">Email</label>
+                    <input asp-for="Email" class="form-control" />
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="PhoneNumber" class="fw-bold">Phone Number</label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+
+    </div>
+</div>

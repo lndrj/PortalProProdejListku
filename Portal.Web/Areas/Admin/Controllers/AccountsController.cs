@@ -1,8 +1,11 @@
 ﻿using System;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Portal.Application.Abstraction;
 using Portal.Domain.Entities;
+using Portal.Domain.Entities.Interfaces;
+using Portal.Infrastructure.Identity;
 using Portal.Infrastructure.Identity.Enums;
 
 namespace Portal.Web.Areas.Admin.Controllers
@@ -11,57 +14,80 @@ namespace Portal.Web.Areas.Admin.Controllers
     [Authorize(Roles = nameof(Roles.Admin) + ", " + nameof(Roles.Manager))]
     public class AccountsController : Controller
     {
-        private readonly IAccountsAdminService _accountsAdminService;
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
 
-        public AccountsController(IAccountsAdminService accountsAdminService)
+        public AccountsController(UserManager<User> userManager, SignInManager<User> signInManager)
         {
-            _accountsAdminService = accountsAdminService;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         public IActionResult Accounts()
         {
-            IList<Account> accounts = _accountsAdminService.Select();
-            return View(accounts);
+            var users = _userManager.Users.ToList();
+            return View(users);
         }
 
-        public IActionResult Delete(int Id)
+        public async Task<IActionResult> DeleteAsync(string Id)
         {
-            bool deleted = _accountsAdminService.Delete(Id);
-
-            if (deleted)
+            var user = await _userManager.FindByIdAsync(Id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            var result = await _userManager.DeleteAsync(user);
+            if (result.Succeeded)
             {
                 return RedirectToAction(nameof(Accounts));
             }
             else
             {
-                return NotFound();
+                return View("Error");
             }
         }
 
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> EditAsync(string Id)
         {
-            Account? account = _accountsAdminService.Select().FirstOrDefault(acc => acc.Id == id);
-
-            if (account == null)
+            var user = await _userManager.FindByIdAsync(Id);
+            if (user == null)
             {
                 return NotFound();
             }
 
-            return View(account);
+            return View(user);
         }
 
         [HttpPost]
-        public IActionResult Edit(Account account)
+        public async Task<IActionResult> Edit(User user)
         {
             if (ModelState.IsValid)
             {
-                // Logika pro úpravu účtu
-                _accountsAdminService.Update(account);
-                return RedirectToAction(nameof(Accounts));
+                var existing = await _userManager.FindByIdAsync(user.Id.ToString());
+                if(existing == null)
+                {
+                    return NotFound();
+                }
+                existing.UserName = user.UserName;
+                existing.FirstName = user.FirstName;
+                existing.LastName = user.LastName;
+                existing.Email = user.Email;
+                existing.PhoneNumber = user.PhoneNumber;
+
+                var result = await _userManager.UpdateAsync(existing); 
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction(nameof(Accounts));
+                }
+                else
+                {
+                    return View("Error");
+                }
             }
 
-            return View(account);
+            return View(user);
         }
     }
 }
