@@ -1,0 +1,72 @@
+﻿@model AkceListViewModel
+
+@{
+	ViewData["Title"] = "Seznam Akcí";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<!-- Filtry -->
+
+<form method="get" action="@Url.Action("AkceList")" class="d-flex flex-wrap align-items-center">
+	<div class="mb-3 me-2">
+		<label for="searchTerm" class="form-label">Název:</label>
+		<input type="text" id="searchTerm" name="searchTerm" class="form-control" value="@Model.Search" />
+	</div>
+	<div class="mb-3 me-2">
+		<label for="dateFilter" class="form-label">Datum konání:</label>
+		<input type="date" id="dateFilter" name="dateFilter" class="form-control" value="@Model.DateFilter?.ToString("yyyy-MM-dd")" />
+	</div>
+	<div class="mb-3 me-2">
+		<label for="minPriceFilter" class="form-label">Minimální cena:</label>
+		<input type="number" id="minPriceFilter" name="minPriceFilter" class="form-control" value="@Model.MinPriceFilter" />
+	</div>
+	<div class="mb-3 me-2">
+		<label for="maxPriceFilter" class="form-label">Maximální cena:</label>
+		<input type="number" id="maxPriceFilter" name="maxPriceFilter" class="form-control" value="@Model.MaxPriceFilter" />
+	</div>
+	<button class="btn btn-primary me-2" type="submit">Filtrovat</button>
+	<a class="btn btn-secondary" asp-action="AkceList" asp-route-searchTerm="" asp-route-dateFilter="" asp-route-minPriceFilter="" asp-route-maxPriceFilter="">Reset</a>
+</form>
+
+
+@{
+	@if (Model.AkceList != null && Model.AkceList.Count > 0)
+	{
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Název</th>
+					<th scope="col">Datum konání</th>
+					<th scope="col">Cena</th>
+					<th scope="col">Akce</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var akce in Model.AkceList)
+				{
+					<tr>
+						<td>@akce.Name</td>
+						<td>@akce.Date.ToString("dd.MM.yyyy hh.mm")</td>
+						<td>@akce.Price</td>
+						<td><a class="btn btn-primary mt-auto" asp-area="AkceDetail" asp-controller="AkceDetail" asp-action="Detail" asp-route-id="@akce.Id">Detail akce</a></td>
+					</tr>
+				}
+			</tbody>
+		</table>
+
+		//Strankovani
+		<div class="d-flex justify-content-center">
+			<nav aria-label="Page navigation">
+				<ul class="pagination">
+					@for (int i = 1; i <= Model.TotalPages; i++)
+					{
+						<li class="page-item @(i == Model.Page ? "active" : "")">
+							<a class="page-link" href="@Url.Action("AkceList", new { searchTerm = Model.Search, dateFilter = Model.DateFilter, minPriceFilter = Model.MinPriceFilter, maxPriceFilter = Model.MaxPriceFilter, page = i, pageSize = Model.PageSize })">@i</a>
+						</li>
+					}
+				</ul>
+			</nav>
+		</div>
+	}
+}

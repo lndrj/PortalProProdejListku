@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1rZoIPFkmyMQC0uLQCM22Mpns+koVNrX2K4azVOneBQ=",
+  "Hash": "AMzSb6nHF1DoqiEjXBrg1f754PksWeIM2968dvrXRYw=",
   "Source": "Portal.Web",
   "BasePath": "_content/Portal.Web",
   "Mode": "Default",
@@ -300,6 +300,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\dialogs.js"
+    },
+    {
+      "Identity": "C:\\Users\\Rark1\\Desktop\\UTB\\3 ZS\\AP5PW\\PortalProProdejListku\\Portal.Web\\wwwroot\\js\\emptyComment.js",
+      "SourceId": "Portal.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Rark1\\Desktop\\UTB\\3 ZS\\AP5PW\\PortalProProdejListku\\Portal.Web\\wwwroot\\",
+      "BasePath": "_content/Portal.Web",
+      "RelativePath": "js/emptyComment.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\emptyComment.js"
     },
     {
       "Identity": "C:\\Users\\Rark1\\Desktop\\UTB\\3 ZS\\AP5PW\\PortalProProdejListku\\Portal.Web\\wwwroot\\js\\product.js",

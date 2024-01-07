@@ -1,78 +1,74 @@
-﻿@model Akce
-
+﻿@model AkceDetailViewModel
 
 <section class="py-3">
-	<div class="container px-4 px-lg-5 my-5">
-		<div class="row gx-4 gx-lg-5 align-items-center">
-			<!-- Obrázek produktu -->
-			<div class="col-md-6">
-				<img class="card-img-top mb-5 mb-md-0" src="@Model.ImageSrc" alt="..." />
-			</div>
-			<!-- Detaily produktu -->
-			<div class="col-md-6">
-				<h1 class="display-5 fw-bolder">@Model.Name</h1>
-				<h3>Datum: @Model.Date.ToString("dd.MM.yyyy")</h3>
-				<h3>Čas: @Model.Time.ToString("HH:mm:ss")</h3>
-				<div class="fs-5 mb-3">
-					<span>@Model.Price</span>
-				</div>
-				<p class="lead">@Model.Description</p>
-				<div class="d-flex">
-					<a class="btn btn-success mt-auto" onclick="Buy(@Model.Id,'@Url.Action(nameof(CustomerOrderCartController.AddOrderItemsToSession),
-																		nameof(CustomerOrderCartController).Replace(nameof(Controller), String.Empty),
-																		new { Area = nameof(Portal.Web.Areas.Customer) })',
-																													'#total_price',
-																													'@System.Globalization.CultureInfo.CurrentCulture.Name')">
-						Přidat do košíku
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <!-- Obrázek akce -->
+            <div class="col-md-6">
+                <img class="card-img-top mb-5 mb-md-0" src="@Model.Akce.ImageSrc" alt="..." />
+            </div>
+            <!-- Detaily akce -->
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bolder">@Model.Akce.Name</h1>
+                <h3>Datum: @Model.Akce.Date.ToString("dd.MM.yyyy")</h3>
+                <h3>Čas: @Model.Akce.Time.ToString("HH:mm:ss")</h3>
+                <div class="fs-5 mb-3">
+                    <span>@Model.Akce.Price</span>
+                </div>
+                <p class="lead">@Model.Akce.Description</p>
+                <div class="d-flex">
+                    <a class="btn btn-success mt-auto" onclick="Buy(@Model.Akce.Id,'@Url.Action(nameof(CustomerOrderCartController.AddOrderItemsToSession), nameof(CustomerOrderCartController).Replace(nameof(Controller), String.Empty), new { Area = nameof(Portal.Web.Areas.Customer) })', '#total_price', '@System.Globalization.CultureInfo.CurrentCulture.Name')">
+                        Přidat do košíku
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <hr />
 
 <section class="py-2">
-	<div class="container px-4 px-lg-5 my-5">
-		<div class="row gx-4 gx-lg-5 align-items-center">
-			<div class="col-md-12 d-flex flex-column">
-				<form class="d-flex flex-column">
-					<div class="form-group py-2 flex-fill">
-						<label for="exampleFormControlTextarea1" class="fw-bolder">Přidat příspěvek</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Napište svůj příspěvek zde..."></textarea>
-					</div>
-					
-					<button class="btn btn-primary" type="submit">Odeslat příspěvek</button>
-					
-				</form>
-			</div>
-		</div>
-	</div>
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-12 d-flex flex-column">
+                <form asp-action="AddComment" method="post">
+                    <input type="hidden" asp-for="Akce.Id" />
+                    <div class="form-group py-2 flex-fill">
+                        <label asp-for="NewComment" class="fw-bolder">Přidat příspěvek</label>
+                        <textarea class="form-control" asp-for="NewComment" id="commentTextArea" rows="5" placeholder="Napište svůj příspěvek zde..."></textarea>
+                    </div>
+
+                    <button type="submit" id="commentSubmit" class="btn btn-primary">Odeslat příspěvek</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
 
 <hr />
 
 <section class="py-2">
-	<div class="container px-4 px-lg-5 my-5">
-		<div class="row">
-			<!-- Příspěvek v diskuzi-->
-			<div class="col-md-4 mb-4 rounded">
-				<div class="card">
-					<div class="card-body">
-						<h5 class="card-title">Uživatel: </h5>
-						<p class="card-text">Příspěvek</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row">
+            <!-- Příspěvek v diskuzi-->
+            @foreach (var prispevek in Model.Diskuze)
+            {
+                <div class="col-md-4 mb-4 rounded">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Uživatel: @prispevek.UserID</h5>
+                            <p class="card-text">@prispevek.Komentar</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
 </section>
+
 
 @section Scripts
-{
-	<environment include="Development">
-		<script src="~/js/product.js"></script>
-	</environment>
+            {
+        <script src="~/js/emptyComment.js"></script>
 }
